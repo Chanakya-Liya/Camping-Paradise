@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <div id="bodyContainer">
+        <div id="logoContainer">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div id="rightNav">
+        </div>
+        <!--cart icon-->
+        <div class="cart-icon">
+            <i class='bx bx-shopping-bag' id="cart-icon" style=' font-size: 30px; color:black' data-quantity="0"></i>
+            <!-- chceck out begigng -->
+        </div>
+        <div class="big-form">
+            <form>
+                <div class="main">
+                    <div class="left">
+                        <button class="exit" onclick="closeCheckOut()">X</button>
+
+                        <h2>BILLING ADDRESS
+                        </h2>
+                        
+                            <label for="c-name">
+                                <i class="bi bi-person-lines-fill"></i>
+                                Full name :
+                            </label>
+                            <input type="text" placeholder="Enter the Name " id="c-name" required>
+                        
+                            <label for="email">
+                                <i class="bi bi-envelope-fill"></i>
+                                Email :
+                            </label>
+                            <input type="email" placeholder="Enter the Email " id="email" required>
+        
+                            <label for="address">
+                                <i class="bi bi-person-rolodex"></i>
+                                Address : </label>
+                            <input type="text" id="address" placeholder=" Enter thr Address" required>
+                        
+
+                        
+                            <label for="city">
+                                <i class="bi bi-house-door-fill"></i>
+                                City :
+                            </label>
+                            <input type="text" id="city" placeholder=" Enter City Name " required>
+                        
+                        
+                            <label for="state">State :</label>
+                            <input type="text" id="state" placeholder="NY" required><br>
+                            
+                            <label for="Zip"> Zip :</label>
+                            <input type="text" id="Zip" placeholder="100000">
+                        
+
+                    </div>
+                    <div class="right">
+                        <h2>PAYMENT</h2>
+                        <div class="accepted-cards">
+                            <h3 class="card-acccepted">Accepted Cards</h3>
+                            <img src="img/visa.png" alt="" class="cards">
+                            <img src="img/paypal.png" alt="" class="cards">
+                            <img src="img/amarican.png" alt="" class="cards">
+                        </div>
+                        
+                            <label for="name-on-card">Name on Card</label>
+                            <input type="text" name="name" id="name-on-card" placeholder="Named on Card" required>
+                        
+
+                            <label for="card-number">CreditCard Number</label>
+                            <input type="text" name="name" id="card-number" placeholder="1111-2222-3333-4444" required>
+                        
+
+                        
+                            <label for="card-number">Exp Month</label>
+                            <input type="date" name="name" id="expdate" required value="21/07/2023"><br>
+
+                            <label for="cvv">Cvv</label>
+                            <input type="text" name="name" id="cvv" maxlength="3"  required ><br>
+                        
+                        
+                            <input type="checkbox" id="Term-and-Condition" required><span>Shipping address same as billing</span>
+                            <button class="proceed" onclick="submit" >Proceed to pay</button>
+
+                        
+
+                    </div>
+
+
+
+                </div>
+
+            </form>
+            <div class="container-cart">
+                <div>
+                    <h4 class="total-price-final">Your Payment amount is :</h4>
+                    <!-- <h5 class="total-price-final" style="color: black;"></h5> -->
+                </div>
+
+
+                <div class="mainBox">
+                    <div></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of cart icon-->
+        <!-- Contents-->
+        <div id="title">
+            <h1 id="titleStore">STORE</h1>
+        </div>
+        <div class="main-container">
+            <section class="shop-container">
+                <!-- large container inside of bodycontainer-->
+
+                <!--contents will strat here-->
+                <div class="shop-content">
+                    <!--- Box 1 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/sleepingBag.jpeg">
+
+                        <h2 class="product-title">Sleeping Bag</h2>
+                        <h3 class="product-price">$40.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 2-->
+                    <div class="product-box">
+                        <img class="product-img" src="img/adult-sleeping-pod.jpeg ">
+
+                        <h2 class="product-title"> Adult sleeping pod</h2>
+                        <h3 class="product-price">$40.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 3 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/eurotent.jpeg">
+
+                        <h2 class="product-title"> Eurohike Tent</h2>
+                        <h3 class="product-price">$120.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 5 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/berghaus.jpeg">
+
+                        <h2 class="product-title"> Berghaus Telsar</h2>
+                        <h3 class="product-price">$999.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 6 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/gas-stove.jpeg ">
+
+                        <h2 class="product-title"> Camping kitchen</h2>
+                        <h3 class="product-price">$329.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 7 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/Air-tent-porch.jpeg">
+
+                        <h2 class="product-title"> Air Tent Porch</h2>
+                        <h3 class="product-price">$329.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 8 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/gas-stove.jpeg ">
+
+                        <h2 class="product-title"> Camping kitchen</h2>
+                        <h3 class="product-price">$115.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 9 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/gas-cartidge.jpeg ">
+
+                        <h2 class="product-title">Portable Gas Stove</h2>
+                        <h3 class="product-price">$15.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 10 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/charcoal-grill.jpeg">
+
+                        <h2 class="product-title">Charcoal grill</h2>
+                        <h3 class="product-price">$140.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 11 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/portablr-toilet.jpeg">
+
+                        <h2 class="product-title"> Portable Flush Toilet</h2>
+                        <h3 class="product-price">$149.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 12 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/head-torch.jpeg">
+
+                        <h2 class="product-title"> Head Tourch</h2>
+                        <h3 class="product-price">$59.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 13 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/wire.jpeg">
+
+                        <h2 class="product-title"> "Mobile Mains Kit"</h2>
+                        <h3 class="product-price">$35.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 14 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/refr.jpeg">
+
+                        <h2 class="product-title"> Outwell</h2>
+                        <h3 class="product-price">$59.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 15 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/colmen.jpeg">
+
+                        <h2 class="product-title"> COLEMAN</h2>
+                        <h3 class="product-price">$79.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <!-- Box 16 -->
+                    <div class="product-box">
+                        <img class="product-img" src="img/mat.jpeg">
+
+                        <h2 class="product-title"> Double Self-inflating Mat</h2>
+                        <h3 class="product-price">$169.00</h3>
+                        <div class="add-to-cart">Add to cart</div>
+                    </div>
+                </div>
+
+        </div>
+
+        </section>
+    </div>
+
+    <div class="cart">
+        <div class="cart-title">
+            <h2>My Cart</h2>
+        </div>
+        <!-- end of cart title -->
+        <div class="cart-content">
+
+        </div>
+        <!-- end of cart contents -->
+        <div class="total">
+            <div class="total-tilte">Total</div>
+            <div style="color:aliceblue;" class="total-price"></div>
+        </div>
+        <!-- creating buttons for close and  purchase -->
+        <button class="checkout">Checkout</button>
+        <button class="close-cart">Close</button>
+    </div>
+
+    <!-- end of cart -->
+
+
+
+
+
+    <!--nav-->
+
+    <div id="navContainer">
+        <nav>
+            <div id="nav_bg"></div>
+            <ul>
+                <li class="other"><a href="index.html">Home</a></li>
+                <li class="leftActive"><a href="Gallery.html">Gallery</a></li>
+                <li class="active"><a href="shop.html">Shop</a></li>
+                <li class="rightActive"><a href="quiz.html">Quiz</a></li>
+                <li class="other"><a href="sitemap.html">Sitemap</a></li>
+                <li class="other"><a href="commentPage.html">Comments</a></li>
+                <li class="other"><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- checkout  -->
+
+
+    </div>
+
+    <!-- checkout codes       ---------------------------------------->
+
+
+</body>
+<script src="shop.js"></script>
+
+</html>
+
+<!-- Reference - https://www.youtube.com/watch?v=Gnh-9IH6BEc -->
+<!-- forms Week 4 lecturez -->

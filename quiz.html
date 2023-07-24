@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <div id="bodyContainer">
+        <div id="logoContainer">
+            <img src="img/logo.png">
+        </div>
+        <div id="rightNav">
+        </div>
+        <div id="quizContent">
+            <div id="quizSquare">
+                <div id="ready">
+                    <h1 id="quizHead">Are You Ready</h1>
+                    <p id="timer">Time left: </p>
+                </div>
+                <div id="provoke">
+                    <p>Welcome to the ultimate outdoor adventure! Test your wilderness knowledge with quizzes 
+                        on camping, wildlife, stargazing, and survival. Whether you're a seasoned explorer or 
+                        a curious beginner, our diverse quizzes will challenge and deepen your love for nature. 
+                        Click "Start Quiz" to unleash your inner adventurer now! Happy exploring!</p>
+                </div>
+                <div id="answerBtn">
+                    <div id="answerBtn1">
+                        <button class="answers" id="answer1">Answer 1</button>
+                        <button class="answers" id="answer2">Answer 2</button>
+                    </div>
+                    <div id="answerBtn2">
+                        <button class="answers" id="answer3">Answer 3</button>
+                        <button class="answers" id="answer4">Answer 4</button>
+                    </div>
+                </div>
+                <div id="nextQuestion">
+                    <button id="next">Next Question</button>
+                </div>
+                <div id="start">
+                    <button id="startBtn">Start Quiz</button>
+                </div>
+                <div id="guideBox">
+                    <h2 id="quizGuide">Quiz Guide</h2>
+                    <div id="pointsContainer">
+                        <p class="points" id="point1">1. You only have 60sec to answer all the questions.</p><br>
+                        <p class="points" id="point2">2. Once you pick an answer you cannot change it.</p><br>
+                        <p class="points" id="point3">3. You cannot exit once you start.</p><br>
+                        <p class="points" id="point4">4. You will get points based on your performance.</p>
+                    </div>
+                    <div id="buttonGroup">
+                        <button id="startQuiz">Start</button>
+                        <button id="exitQuiz">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "footer">
+            <p>&copy; 2023 Camping Paradise. All rights reserved.</p>
+            <a href="page-editor-Chanakya.html"><img src="/img/ChanakyaAboutUs.jpg" alt="Avatar" id="avatar"></a>
+        </div>
+    </div>
+    <div id="navContainer">
+        <nav>
+            <div id="nav_bg"></div>
+                <ul>
+                    <li class="other"><a href="index.html">Home</a></li>
+                    <li  class="other"><a href="Gallery.html">Gallery</a></li>
+                    <li  class="leftActive"><a href="shop.html">Shop</a></li>
+                    <li class="active"><a href="quiz.html" >Quiz</a></li>
+                    <li class="rightActive"><a href="sitemap.html" >Sitemap</a></li>
+                    <li class="other"><a href="commentPage.html">Comments</a></li>
+                    <li class="other"><a href="AboutUs.html" >About us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+#map-container {
+    display: flex;
+    background-color: pink;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+#bodyContainer {
+  background-image: url("img/siteMapBackground.jpg");
+  height: 120vh !important;
+}
+/* buttons */
+circle:hover {
+    fill: #15471c;
+}
+
+/* footer */
+
+#footer {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  color: goldenrod;
+}
+
+#avatar {
+  height: 45px;
+  width: 45px;
+}
+
+#bodyContainer{
+  height: 100vh !important;
+  border-bottom: 3px solid #000;
+}
+
+#siteMapTitle{
+  text-align: center;
+  /* backdrop-filter: blur(10px); */
+  border: 3px solid white;
+  background-color: #222;
+  width: 20%;
+  border-radius: 20px;
+  margin-left: 40%;  
+  margin-top: 2%;
+}
+
+#title{
+  font-size: 300%;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+#map{
+  border-radius: 20px;
+  margin-top: 20px;
+  height: 60%;
+  border: 7px solid black;
+  background-color: rgba(255, 255, 255, 0.651);
+  height: 55%;
+  width: 90%;
+  margin: 2% auto;
+}

@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1 ">
+        <title>Student 4</title>
+        <link rel = "stylesheet" href = "gallery.css">
+        <link rel = "stylesheet" href = "new.css">
+        <script src = "gallery.js"></script>
+    </head>
+    <body>
+
+        <div id = "body-content">
+            <div id="logoContainer">
+                <img src="img/logo.png">
+            </div>
+    
+            <div id="rightNav">
+            </div>
+    
+            <div id="bodyContent">
+                
+            </div>
+        </div>	
+        <div id="navContainer">
+            <nav>
+                <div id="nav_bg"></div>
+                    <ul>
+                        <li class="leftActive"><a href="index.html">Home</a></li>
+                        <li  class="active"><a href="gallery.css">Gallery</a></li>
+                        <li  class="rightActive"><a href="shop.html">Shop</a></li>
+                        <li class="other"><a href="quiz.html" >Quiz</a></li>
+                        <li class="other"><a href="sitemap.html" >Sitemap</a></li>
+                        <li class="other"><a href="commentPage.html" >Comments</a></li>
+                        <li class="other"><a href="AboutUs.html" >About us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id = "title">
+                <h1>Visit Sri Lanka's Great Outdoors!</h1>
+            </div>
+            <img id = "settings-img" src = "img/settings.png" onclick="displayMenu()">
+            <div id = "settings">
+                <div id = "settings-btns">
+                    <div id = "colour-buttons">
+                        <button id = "colour-change1" onClick = "bodyColourChangeOne()" style="background-color:395144;"></button>
+                        <button id = "colour-change2" onClick = "bodyColourChangeTwo()" style = "background-color: AA8B56;"></button>
+                        <button id = "colour-change3" onclick= "bodyColourChangeThree()" style = "background-color: #4E6C50;"></button>
+                        <button id = "colour-change4" onclick= "randomColour()"></button>
+                    </div>
+                    <hr>
+                    <div id = "font-buttons">
+                        <button id = "font-change1" onClick = "changeFontLarge()" style = "font-size: 12px;">A</button>
+                        <button id = "font-change2" onClick = "changeFontLarger()" style = "font-size: 16px;">A</button>
+                        <button id = "font-change3" onclick= "changeFontLargest()" style = "font-size: 20px;">A</button>
+                    </div>
+                </div>
+            </div>
+            <div id = "thumbnail-list">
+                <table>
+                    <tr>
+                        <td>
+                            <div class = "thumbnail-image">
+                                <img src = "img/horton.jpg"
+                                alt = "Horton Plain" title = "Horton Plains" onclick = "changeHortonPlains();">
+                            </div>
+                        </td>
+                        <td>
+                            <img src = "img/ella-rock.jpg" 
+                            alt = "Ella Rock" title = "Ella Rock" onclick = "changeEllaRock();">
+                        </td>
+                        <td>
+                            <img src = "img/sigirya.jpg"
+                            alt = "Sigiriya" title = "Sigirya" onclick = "changeSigiriya();">
+                        </td>
+                        <td>
+                            <img id = "img4" src = "img/meemure.jpg"
+                            alt = "Meemure" title="Meemure" onclick = "changeMeemure();">
+                        </td>
+                        <td>
+                            <img src = "img/ohiya.jpg"
+                            alt = "Ohiya" title = "Ohiya" onclick = "changeOhiya();">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <fieldset>
+                <div id = "centre-display">  
+                    <table >
+                        <tr>
+                            <td>
+                                <img id = "main-content-image" src = "img/camping.jpg"
+                                >
+                            </td>
+                            <td id = "details">
+                                <div>
+                                    <h2 id = "content-heading">Feel like spending your vacation with nature?</h2>
+                                    <p id = "details-text">Hiking and camping go hand in hand, forming a harmonious union that celebrates exploration and the beauty of the great outdoors. Hiking takes adventurers on exhilarating journeys through rugged terrains, unveiling breathtaking vistas and hidden treasures along the way. Each step fuels a sense of accomplishment as hikers conquer challenging trails, their spirits uplifted by fresh mountain air and the soothing symphony of nature. When the day comes to a close, camping offers a sanctuary amidst the wilderness. Pitching tents beneath towering trees or beside cascading streams, campers find solace in the simplicity of nature and embrace the serenity that envelops them. Together, hiking and camping create an unforgettable fusion of discovery and tranquility, a testament to the captivating allure of the natural world.
+    
+                                    </p>
+                                </div> 
+                                <div id = "play-btn">
+                                    <a id = "button-bg" href = "https://youtu.be/F-0i2l3sqno" class = "button" target = "_blank">
+                                        <img id = "play-img" src = "img/playbtn.jpg" style = "width: 30px;">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+            <!-- <footer>
+                <div >
+                  <p>&copy; 2023 Camping Paradise. All rights reserved.</p>
+                  edit the scr uri to your image-->
+                  <!-- <a href="edit_page.html"><img src="resources/idImage.jpg" alt="Avatar" id="avatar"></a>
+                </div>
+              </footer> --> 
+              <div id = "footer">
+                <p>&copy; 2023 Camping Paradise. All rights reserved.</p>
+                <a href="page-editor-Jason.html"><img src="img/JasonAboutUs.jpg" alt="Avatar" id="avatar"></a>
+              </div>
+        </div>
+    </body>
+</html>

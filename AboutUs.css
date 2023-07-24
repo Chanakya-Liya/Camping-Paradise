@@ -1,0 +1,142 @@
+#PeopleSquare{
+    width: 80%;
+    height: 60%;
+    margin: 6% auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    }
+
+#header{
+    margin: 1% auto;
+    border-radius: 20px;
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 150%;
+    backdrop-filter: blur(10px);
+    width: 50%;
+}
+
+.personContainer{
+    display: inline-block;
+    width: 20%;
+    height: 36%;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin: 4% 1%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+.personImg{
+    width: 10vw;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto auto;
+}
+
+.personContainer:hover{
+    border: 4px solid black;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.85;
+}
+
+#bodyContainer {
+    background-image: url("img/AboutUsBackground.jpg") !important;
+  }
+
+
+#detailPopUp{
+    position: absolute;
+    background-color: #111111fb;
+    width: 80%;
+    height: 80%;
+    top: 15%;
+    left: 10%;
+    border-radius: 20px;
+    border: 3px solid white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#popUpImg{
+    display: flex;
+    margin: 3%;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+#popUpImg img{
+    margin: 1% 0%;
+    width: 20%;
+    height: 20%;
+}
+
+#studentName{
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin:0 auto 
+}
+
+#studentDetails{
+    /* border: 1px solid pink; */
+    height: 90%;
+    color: white;
+    margin: 5% auto;
+}
+
+#studentInfo{
+    /* background-color: pink; */
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    color: white;
+}
+
+#closeBtn{
+    background-color: transparent;
+    color: white;
+    margin: 1% 93% 0 ;
+    font-size: large;
+    text-decoration: none;
+    border: none;
+    width: 6%;
+}
+
+#closeBtn:hover{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+body{
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+
+#img2, #img1, #img3, #img4{
+    border-radius: 100px;
+}
+
+/*---------- footer styling ------------*/
+
+#footer {
+    background-color: #ffffff;
+    text-align: center;
+    margin: -3% 0;
+    color: goldenrod;
+  }
+  
+  #avatar {
+    height: 45px;
+    width: 45px;
+  }
+
+
+

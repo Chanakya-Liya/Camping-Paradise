@@ -1,0 +1,121 @@
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 233, 233);
+    height: 100vh;
+    width: 100vw;
+    position:static;
+ /* background-color: #AA8B56; */
+     /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=aa8c57&c2=f0ebce&gt=l&gd=dtr
+    */
+    background: #AA8C57;
+    background: linear-gradient(225deg, #AA8C57, #F0EBCE);;}
+
+.largebox{
+    display: flex;
+    flex-wrap:inherit;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+    position: relative;
+
+}
+#heading{
+text-align: center;
+font-weight: bolder;    
+font-size: 40px;
+}
+.smallBoxes{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0%;
+    flex-grow: 0;
+    margin: 10px;
+    position:static;
+    background-color: #f1eed931;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
+    transform: ptranslate(0.2s ease 0.2s);
+    /* transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function:ease ;
+    transition-delay: 0ms; */
+    animation: slideToScreen 1s ease 0s 1 normal none;
+    
+    /* animation-name: slideToScreen;
+    animation-duration: 1s; how long to take 1 lap 
+    animation-timing-function:ease ;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+
+}
+/* to the transition */
+.smallBoxes:hover  {
+     transform: translateY(-100px) ;  
+    background-color: transparent;
+    border-style: none;
+    background-color: #ffffff00;
+    box-shadow: none;
+    display: block;
+    ;
+
+}
+
+.img-area{
+    height: 256px;
+    width: 256px;
+    /* overflow: hidden; */
+}
+.img{
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+/* .smallBoxes:hover .img{
+    transform: scale(1.2);
+} */
+
+
+.smallBoxes h2 , h3 {
+    color: 0;
+    text-align: center;
+    border: none;
+    height:auto;
+    
+    
+}
+
+/* to the animation */
+@keyframes slideToScreen{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+i{
+    
+    font-size: 25px;
+    color: #000;
+    justify-content: first baseline;
+    padding-left: 20px;
+}
+ul{
+    display: flex;
+    
+    justify-content: left;
+    text-align:right
+}
+body{margin: 0%;
+padding: 0%;}

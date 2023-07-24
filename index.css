@@ -1,0 +1,168 @@
+#bodyContainer {
+    background-image: url("img/homeBackground.jpg");
+    height: 40vh !important;
+    background-size: cover;
+  }
+
+body{
+    background-color: #111 !important;
+}
+
+#title{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    text-shadow: 10px 10px 20px rgb(0, 0, 0);
+    padding-top: 78px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: #fff;
+}
+
+#catcher{
+    width: 50%;
+    text-align: center;
+    margin: -3% auto 0;
+    color: white;
+}
+
+.headers{
+    text-align: center;
+    margin: 5% auto;
+    font-weight: bold;
+    font-size: 150%;
+    border-bottom: 4px solid rgb(95, 171, 196);
+    width: 15%;
+    color: white;
+}
+
+hr{
+    color: black;
+    height: 2px;
+    border: 0;
+    background-color: black;
+}
+
+.additionalPage img{
+    height: 300px;
+    width: 350px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.additionalPage{
+    margin: 5% 10%;
+    display:flex;
+    background-color: rgb(228, 242, 253);
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.content-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+  .text-content button{
+    width: 15%;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+
+.text-content button:hover{
+background-color: black;
+}
+
+.text-content button:hover a{
+    color: white;
+    }
+
+#products{
+    overflow-x: auto;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#products img{
+    height: 400px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+#products p{
+    color: white;
+    text-align: center;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+
+  ::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+    background: gray;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background: #2301ff;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    position: relative;
+    margin-left: 4%;
+    border: 4px solid white;
+    width: fit-content;
+  }
+  
+  .imageText {
+    position: absolute;
+    top: 83%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    height: 20%;
+    align-items: center;
+    margin: auto auto;
+  }
+
+  .imageText h1{
+    background-color: #000;
+    border-radius: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    color: white;
+  }
+
+  .imageContainer img{
+    width: 400px;
+    height: 300px;
+  }
+
+  #linkContainer{
+    display: flex;
+  }
+
+  #linkContainer{
+    cursor: pointer;
+  }
+
+#store:hover, #quiz:hover, #gallery:hover{
+    opacity: 0.6;
+}

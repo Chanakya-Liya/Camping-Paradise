@@ -1,0 +1,293 @@
+/* buttons */
+
+#play-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3d753f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#button-bg:hover {
+    background-image: url("img/sunset.jpg");
+    background-size:contain;
+}
+
+
+
+
+#buttons {
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+button {
+    border: 1px;
+    border-radius: 5px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    margin: 0;
+    background-color: F0EBCF;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#thumbnail-list {
+    margin-top: 22px;
+    margin-bottom: 2%px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+}
+
+#main-content-image {
+    width: 700px;
+    box-shadow: 4px 4px 5px rgb(62, 108, 62);
+}
+
+#centre-display {
+    padding: 20px;
+    background-color: F0EBCE;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#details {
+    display: flexbox;
+    padding: 10px;
+}
+
+/* nav bar */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width:807px; 
+  width: auto !important; 
+}
+
+nav {
+  position: fixed;
+  top: -20px;
+  width: 70%;
+  background-color: #000000;
+  height: 60px;
+  mix-blend-mode: lighten;
+}
+
+#nav_bg {
+  position: relative;
+  background-color: #ffffff;
+  height: 25px;
+  top: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.other {
+  border-radius: 0px;
+}
+
+.leftActive {
+  border-radius: 0px 0px 20px 0px;
+}
+
+.rightActive {
+  border-radius: 0px 0px 0px 20px;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 20px 20px;
+  height: 40px;
+  border-bottom: none;
+  position: relative;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  /* padding-bottom: 11px; */
+  text-decoration: none;
+  color: #333;
+}
+
+li.active {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px 20px 0 0;
+  height: 20px;
+  border-bottom: none;
+  position: relative;
+}
+
+li.active a {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: rgb(214, 233, 204);
+}
+
+#bodyContainer {
+  background-image: url("./pexels-matthew-montrone-1179229\ \(1\).jpg");
+  background-size: cover;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navContainer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#logoContainer {
+  width: 15%;
+  height: 45px;
+  background-color: #ffffff;
+}
+
+#logoContainer img {
+  width: 18%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#rightNav{
+  height: 45px;
+  margin-left: 85%;
+  position: relative;
+  top: -45px;
+  background-color: #ffffff;
+  }
+
+  li a:hover{
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    margin: 0 1%;
+    backdrop-filter: blur(10px);
+  }
+
+/* images */
+
+#thumbnail-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img:hover {
+    width: 210px;
+    box-shadow: #3d753f;
+    overflow: hidden;
+}
+
+
+
+/* settings menu */
+
+#settings {
+    margin-left: 1%;
+    position: fixed;
+    margin-top: 3%;
+    width: 10%;
+    display: flexbox;
+    padding: 0.5%;
+    display: none;
+    border: solid black 1px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgb(218, 218, 202, 25%);
+
+}
+
+#settings-img {
+    width: 2%;
+    position: fixed;
+    margin-left: 1%;
+    cursor: pointer;
+    opacity: 25%;
+}
+
+#settings-img:hover {
+    animation: spin 1s linear infinite;
+    width: 2.2%;
+    opacity: 100%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#colour-change1, #colour-change2, #colour-change3, #colour-change4, #font-change1, #font-change2, #font-change3 {
+    padding: 7px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: solid black 2px;
+}
+
+#colour-change4 {
+    background-image: linear-gradient(to right, rgb(226, 117, 117), rgb(244, 144, 244), rgb(143, 143, 243), rgb(156, 244, 156), rgb(236, 236, 146), rgb(241, 200, 124));
+}
+
+#font-change1, #font-change2, #font-change3 {
+    height: 40px;
+    width: 30px;
+}
+
+#font-buttons, #colour-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* footer */
+
+#footer {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  color: goldenrod;
+}
+
+#avatar {
+  height: 45px;
+  width: 45px;
+}
