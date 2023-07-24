@@ -25,9 +25,9 @@ personOne.addEventListener("click", function(){
     uow.innerHTML = "UOW no: W1987516"
     iit.innerHTML = "IIT no: 20223256"
     pageOne.innerHTML = "=> Shop Page"
-    pageTwo.innerHTML = "=> Blah Blah Blah"
-    pageThree.innerHTML = "=> Page Editor"
-    pageFour.innerHTML = "=> Blah Blah Blah"
+    pageTwo.innerHTML = "=> Page Editor"
+    pageThree.innerHTML = ""
+    pageFour.innerHTML = ""
 })
 
 personTwo.addEventListener("click", function(){
