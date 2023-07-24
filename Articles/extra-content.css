@@ -1,0 +1,84 @@
+
+/* nav bar */
+
+body {
+  background-color: #c1c1c1 !important;
+}
+
+
+/* footer */
+
+#footer {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  color: goldenrod;
+}
+
+#avatar {
+  height: 45px;
+  width: 45px;
+}
+
+/* --------- article ---------- */
+
+#main-content {
+    display: flex;
+    justify-content: center;
+}
+
+#article{
+    justify-content: center;
+    width: 50%;
+    background-color: rgb(255, 255, 255, .5);
+    padding: 5%;
+    border-radius: 5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    background-image: url(wallpaper.jpg);
+}
+
+.article-img {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 20px;
+}
+
+#menu-img {
+  margin-left: 2%;
+}
+
+#menu-icon:hover {
+  cursor: pointer;
+}
+
+#contents li{
+  display: contents;
+}
+
+#contents {
+  margin-left: 2%;
+  margin-top: 3%;
+  background-color: rgb(255, 255, 255, .5);
+  width: 10%;
+  padding: 1%;
+  border-radius: 2%;
+  display: none;
+  font-size: small;
+}
+
+#menu-img, #contents {
+  position: fixed;
+}
+
+
+
+
