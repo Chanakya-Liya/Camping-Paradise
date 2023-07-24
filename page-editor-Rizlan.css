@@ -1,0 +1,60 @@
+
+*{margin: 0px;
+padding:0px ;
+font-family: sans-serif;
+
+}
+body{background-image: url(img/bground.jpg);
+    background-position:  center;
+    background-size: cover;
+    }
+
+.Large-container{
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100vw;
+}
+
+.details {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 50px 10px;
+}
+.studentDetails{
+    width: 60%;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(184, 175, 175);
+    border-radius: 10px;
+    
+}
+
+.splash{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 600px;
+    /* backdrop-filter: blur(px); */
+}
+
+.splash h2{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.Large-container h2{
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
